@@ -1,1 +1,8 @@
+# Force GitHub to detect Dart
 *.dart linguist-language=Dart
+
+# Optionally, you can also disable C++ detection if it's incorrectly identified
+*.cpp linguist-vendored
+*.h linguist-vendored
+*.cc linguist-vendored
+*.cxx linguist-vendored

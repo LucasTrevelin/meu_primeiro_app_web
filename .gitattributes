@@ -1,7 +1,14 @@
-# Force GitHub to detect Dart
+# Detecta arquivos Dart
 *.dart linguist-language=Dart
 
-# Optionally, you can also disable C++ detection if it's incorrectly identified
+# Detecta o arquivo pubspec.yaml como um arquivo Dart
+pubspec.yaml linguist-language=Dart
+
+# Marcar arquivos relacionados ao CMake como 'vendored' para não interferir na linguagem principal
+CMakeLists.txt linguist-vendored
+*.cmake linguist-vendored
+
+# Marcar arquivos C++ como 'vendored' também
 *.cpp linguist-vendored
 *.h linguist-vendored
 *.cc linguist-vendored
